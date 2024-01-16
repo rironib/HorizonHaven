@@ -253,7 +253,7 @@ nav li a {
   color: #fff;
   padding: 0.75rem 2rem;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 700;
   border: 0;
   border-radius: 0.5rem;
   cursor: pointer;
@@ -280,6 +280,7 @@ nav li a {
   }
   .popular button {
     font-size: 14px;
+    font-weight: 500;
   }
   .popular-image img {
     width: 100%;
@@ -533,6 +534,91 @@ nav li a {
   }
 }
 
+/* Get Lost Section */
+#lost {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2rem;
+  margin-bottom: 100px;
+}
+.lost-left {
+  width: 50%;
+}
+.lost-title {
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.lost-desc {
+  color: #5a5a5d;
+  margin-bottom: 24px;
+}
+.lost-left ul {
+  margin-left: 1rem;
+  margin-bottom: 32px;
+}
+.lost-left ul li {
+  color: #131318;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.lost-left button {
+  background: #ff5400;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  font-size: 18px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 0.5rem;
+}
+.lost-right {
+  width: 50%;
+}
+.lost-right iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+@media screen and (max-width: 768px) {
+  #lost {
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .lost-left {
+    width: 100%;
+  }
+  .lost-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .lost-desc {
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+  .lost-left ul {
+    margin-bottom: 1.5rem;
+  }
+  .lost-left ul li {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .lost-left button {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .lost-right {
+    width: 100%;
+  }
+  .lost-right iframe {
+    width: 100%;
+    height: 240px;
+  }
+}
+
 /* Review Section */
 #reviews {
   text-align: center;
@@ -618,6 +704,7 @@ nav li a {
     font-size: 14px;
   }
 }
+
 /* Newsletter Section */
 #newsletter {
   display: flex;
@@ -698,6 +785,7 @@ nav li a {
 .newsletter-right h4 {
   color: #fff;
   font-size: 24px;
+  font-weight: 600;
 }
 .newsletter-right h3 {
   color: #fff;
@@ -713,6 +801,9 @@ nav li a {
   }
   .newsletter-left {
     width: 100%;
+  }
+  #newsletter button {
+    font-weight: 500;
   }
   .newsletter-right {
     width: 100%;
@@ -731,11 +822,12 @@ nav li a {
   .newsletter-right h4 {
     color: #fff;
     font-size: 16px;
+    font-weight: 500;
   }
   .newsletter-right h3 {
     color: #fff;
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 700;
   }
 }
 
@@ -793,6 +885,9 @@ footer {
   color: #131318;
   font-weight: 300;
   margin-top: 40px;
+}
+.footer-copyright strong {
+  color: #ff5400;
 }
 @media screen and (max-width: 768px) {
   .footer {
