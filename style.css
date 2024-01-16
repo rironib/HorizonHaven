@@ -261,9 +261,9 @@ nav li a {
   width: 40%;
 }
 .popular-image img {
-  border-radius: 1rem;
   width: 100%;
   height: 100%;
+  border-radius: 1rem;
 }
 @media screen and (max-width: 768px) {
   .popular {
@@ -535,6 +535,85 @@ nav li a {
   .why-card p {
     font-size: 14px;
   }
+}
+
+/* Discount Section */
+#discount {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.discount-title {
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.discount-desc {
+  width: 50%;
+  margin: 0 auto;
+  color: rgba(19, 19, 24, 0.7);
+  margin-bottom: 48px;
+}
+.discount-item {
+  display: flex;
+  justify-content: end;
+  border-radius: 16px;
+  background-image: url("images/malaysia.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  padding: 50px 56px;
+  margin-bottom: 2rem;
+}
+.discount-card {
+  width: 60%;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+}
+.discount-info {
+  color: #5a5a5d;
+}
+.discount-info i {
+  color: #ff5400;
+}
+.discount-info-more {
+}
+
+.discount-card-title {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.discount-card-desc {
+  color: #5a5a5d;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+.discount-card-price {
+  color: #ff5400;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+#discount button {
+  background: #ff5400;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  font-size: 18px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 /* Get Lost Section */
@@ -906,6 +985,7 @@ footer {
   }
   .footer-info {
     color: #5a5a5d;
+    font-size: 14px;
     text-align: center;
     width: 80%;
     margin: 0 auto;
