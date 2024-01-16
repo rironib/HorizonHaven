@@ -359,7 +359,7 @@ main {
 }
 .why-card-list-inside {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 .why-card {
   width: 50%;
@@ -393,6 +393,15 @@ main {
   color: #5a5a5d;
 }
 
+@media screen and (max-width: 768px) {
+  .why-card-list-inside {
+    flex-direction: column;
+  }
+  .why-card {
+    width: 100%;
+  }
+}
+
 /* Review Section */
 #reviews {
   text-align: center;
@@ -416,7 +425,7 @@ main {
   gap: 1rem;
 }
 .review-card {
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
   text-align: center;
   border-radius: 1rem;
   box-shadow: 0 40px 40px rgba(0, 0, 0, 0.06);
@@ -432,7 +441,7 @@ main {
 }
 .user-name {
   color: #131318;
-  margin: 0.75rem auto;
+  margin: 0.5rem auto;
 }
 .user-location {
   color: #bebebe;
@@ -440,15 +449,24 @@ main {
 }
 .star {
   color: #ffc200;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 .user-review {
   color: rgba(19, 19, 24, 0.7);
 }
+
+@media screen and (max-width: 768px) {
+  .review-info {
+    width: 100%;
+  }
+  .review-card-list {
+    flex-direction: column;
+  }
+}
 /* Newsletter Section */
 #newsletter {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
   width: 100%;
   height: max-content;
   margin-bottom: 100px;
@@ -508,10 +526,6 @@ main {
   border-radius: 1rem;
   height: 100%;
 }
-/* .newsletter-right img {
-  width: 100%;
-  height: 100%;
-} */
 .newsletter-tag {
   display: flex;
   flex-direction: column;
@@ -534,6 +548,23 @@ main {
   color: #fff;
   font-size: 32px;
   font-weight: 800;
+}
+
+@media screen and (max-width: 768px) {
+  #newsletter {
+    flex-direction: column;
+  }
+  .newsletter-left {
+    width: 100%;
+  }
+  .newsletter-right {
+    width: 100%;
+  }
+  .newsletter-right-bg {
+    max-height: 420px;
+    min-height: 380px;
+    width: 100%;
+  }
 }
 
 /* Footer Section */
