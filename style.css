@@ -209,6 +209,7 @@ nav li a {
     width: 100%;
   }
   .banner button {
+    font-weight: 500;
     width: 100%;
   }
 }
@@ -338,12 +339,28 @@ nav li a {
     ),
     url("images/destination-img-1.png"), lightgray 50%;
 }
+.destination-img-1:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.6) 0%,
+      rgba(19, 19, 24, 0.6) 100%
+    ),
+    url("images/destination-img-1.png"), lightgray 50%;
+}
 .destination-img-2 {
   grid-area: g-2;
   background: linear-gradient(
       0deg,
       rgba(19, 19, 24, 0.2) 0%,
       rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("images/destination-img-2.png"), lightgray 50%;
+}
+.destination-img-2:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.6) 0%,
+      rgba(19, 19, 24, 0.6) 100%
     ),
     url("images/destination-img-2.png"), lightgray 50%;
 }
@@ -356,12 +373,28 @@ nav li a {
     ),
     url("images/destination-img-3.png"), lightgray 50%;
 }
+.destination-img-3:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.6) 0%,
+      rgba(19, 19, 24, 0.6) 100%
+    ),
+    url("images/destination-img-3.png"), lightgray 50%;
+}
 .destination-img-4 {
   grid-area: g-4;
   background: linear-gradient(
       0deg,
       rgba(19, 19, 24, 0.2) 0%,
       rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("images/destination-img-4.png"), lightgray 50%;
+}
+.destination-img-4:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.6) 0%,
+      rgba(19, 19, 24, 0.6) 100%
     ),
     url("images/destination-img-4.png"), lightgray 50%;
 }
@@ -374,12 +407,28 @@ nav li a {
     ),
     url("images/destination-img-5.png"), lightgray 50%;
 }
+.destination-img-5:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.6) 0%,
+      rgba(19, 19, 24, 0.6) 100%
+    ),
+    url("images/destination-img-5.png"), lightgray 50%;
+}
 .destination-img-6 {
   grid-area: g-6;
   background: linear-gradient(
       0deg,
       rgba(19, 19, 24, 0.2) 0%,
       rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("images/destination-img-6.png"), lightgray 50%;
+}
+.destination-img-6:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.6) 0%,
+      rgba(19, 19, 24, 0.6) 100%
     ),
     url("images/destination-img-6.png"), lightgray 50%;
 }
@@ -392,13 +441,28 @@ nav li a {
     ),
     url("images/destination-img-7.png"), lightgray 50%;
 }
+.destination-img-7:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.6) 0%,
+      rgba(19, 19, 24, 0.6) 100%
+    ),
+    url("images/destination-img-7.png"), lightgray 50%;
+}
 .destination-img-1,
+.destination-img-1:hover,
 .destination-img-2,
+.destination-img-2:hover,
 .destination-img-3,
+.destination-img-3:hover,
 .destination-img-4,
+.destination-img-4:hover,
 .destination-img-5,
+.destination-img-5:hover,
 .destination-img-6,
-.destination-img-7 {
+.destination-img-6:hover,
+.destination-img-7,
+.destination-img-7:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -556,64 +620,123 @@ nav li a {
 }
 .discount-item {
   display: flex;
-  justify-content: end;
+  align-items: center;
   border-radius: 16px;
-  background-image: url("images/malaysia.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
-  padding: 50px 56px;
+  padding: 50px 48px;
   margin-bottom: 2rem;
 }
+.card-a {
+  justify-content: flex-end;
+  background-image: url("images/card-a.png");
+}
+.card-b {
+  justify-content: flex-start;
+  background-image: url("images/card-b.png");
+}
 .discount-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
   width: 60%;
+  height: max-content;
   border-radius: 16px;
+  padding: 50px;
   border: 2px solid #fff;
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(2.5px);
 }
 .discount-info {
   color: #5a5a5d;
+  margin-bottom: 26px;
+}
+.discount-info-item {
+  padding-right: 24px;
 }
 .discount-info i {
   color: #ff5400;
+  margin-right: 0.25rem;
 }
 .discount-info-more {
 }
 
 .discount-card-title {
   color: #131318;
-  font-family: Mulish;
   font-size: 24px;
-  font-style: normal;
   font-weight: 800;
-  line-height: normal;
+  margin-bottom: 1rem;
 }
 .discount-card-desc {
+  text-align: left;
   color: #5a5a5d;
-  font-family: Mulish;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px; /* 162.5% */
+  margin-bottom: 1rem;
 }
 .discount-card-price {
   color: #ff5400;
-  font-family: Mulish;
   font-size: 20px;
-  font-style: normal;
   font-weight: 800;
-  line-height: normal;
+  margin-bottom: 1.5rem;
 }
 #discount button {
   background: #ff5400;
   color: #fff;
+  width: max-content;
   padding: 0.75rem 2rem;
   font-size: 18px;
   font-weight: 700;
   border: 0;
   border-radius: 0.5rem;
   cursor: pointer;
+}
+.btn-package {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  #discount {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .discount-title {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+  .discount-desc {
+    width: 80%;
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+  }
+  .discount-item {
+    align-items: flex-end;
+    padding: 1rem;
+  }
+  .discount-card {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .discount-info {
+    font-size: 1rem;
+  }
+  .discount-card-title {
+    font-size: 20px;
+  }
+  .discount-card-desc {
+    font-size: 14px;
+  }
+  .discount-card-price {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  #discount button {
+    padding: 0.75rem 2rem;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .btn-package {
+    display: none;
+  }
 }
 
 /* Get Lost Section */
@@ -690,7 +813,7 @@ nav li a {
   }
   .lost-left button {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
   }
   .lost-right {
     width: 100%;
@@ -831,6 +954,7 @@ nav li a {
   background: #ff5400;
   color: #fff;
   text-align: center;
+  font-size: 18px;
   font-weight: 600;
   padding: 14px 20px;
   border-radius: 8px;
@@ -885,6 +1009,7 @@ nav li a {
     width: 100%;
   }
   #newsletter button {
+    font-size: 16px;
     font-weight: 500;
   }
   .newsletter-right {
