@@ -217,12 +217,11 @@ nav li a {
 .popular {
   display: flex;
   justify-content: space-between;
-  gap: 70px;
-  width: 100%;
+  gap: 80px;
   margin-bottom: 100px;
 }
 .popular-text {
-  width: 50%;
+  width: 60%;
   color: #131318b2;
   font-size: 1rem;
 }
@@ -259,11 +258,12 @@ nav li a {
   cursor: pointer;
 }
 .popular-image {
-  border-radius: 0.5rem;
+  width: 40%;
 }
 .popular-image img {
-  width: 540px;
-  height: 550px;
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
 }
 @media screen and (max-width: 768px) {
   .popular {
@@ -282,9 +282,12 @@ nav li a {
     font-size: 14px;
     font-weight: 500;
   }
+  .popular-image {
+    width: 100%;
+  }
   .popular-image img {
     width: 100%;
-    height: 100%;
+    height: 480px;
   }
 }
 
