@@ -141,7 +141,7 @@ nav li a {
   align-items: center;
   flex-direction: column;
   height: 500px;
-  margin-bottom: 100px;
+  margin-bottom: 6rem;
   border-radius: 0.5rem;
 }
 .banner-title {
@@ -220,7 +220,7 @@ nav li a {
   display: flex;
   justify-content: space-between;
   gap: 80px;
-  margin-bottom: 100px;
+  margin-bottom: 6rem;
 }
 .popular-text {
   width: 60%;
@@ -295,211 +295,114 @@ nav li a {
 
 /* Destination Section */
 #destination {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 6rem;
 }
-.destination-title {
+.container {
+  width: 100%;
+}
+.heading {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.heading h2 {
   color: #131318;
   font-size: 40px;
   font-weight: 800;
-  margin-bottom: 24px;
+  margin-bottom: 1rem;
   text-align: center;
 }
-.destination-info {
-  width: 50%;
+.heading p {
   color: rgba(19, 19, 24, 0.7);
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 2rem;
 }
-.destination-gallery {
+.gallery {
   display: grid;
-  width: 100%;
-  gap: 1.5rem;
-  grid-template-areas:
-    "g-1 g-1 g-1 g-1 g-2 g-2 g-2 g-2"
-    "g-3 g-3 g-4 g-4 g-4 g-4 g-5 g-5"
-    "g-6 g-6 g-6 g-7 g-7 g-7 g-7 g-7";
-}
-#gallery {
-  display: flex;
-  align-items: center;
+  gap: 1rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   justify-content: center;
-  color: #fff;
-  width: 100%;
+  align-items: center;
+}
+.item {
+  position: relative;
   height: 300px;
+  text-align: center;
   border-radius: 1rem;
+  overflow: hidden;
 }
-.destination-img-1 {
-  grid-area: g-1;
-  background: linear-gradient(
-      0deg,
-      rgba(19, 19, 24, 0.2) 0%,
-      rgba(19, 19, 24, 0.2) 100%
-    ),
-    url("images/destination-img-1.jpg"), lightgray 50%;
+.item-1 {
+  grid-column: auto/span 6;
 }
-.destination-img-1:hover {
-  background: linear-gradient(
-      0deg,
-      rgba(19, 19, 24, 0.6) 0%,
-      rgba(19, 19, 24, 0.6) 100%
-    ),
-    url("images/destination-img-1.jpg"), lightgray 50%;
+.item-2 {
+  grid-column: auto/span 6;
 }
-.destination-img-2 {
-  grid-area: g-2;
-  background: linear-gradient(
-      0deg,
-      rgba(19, 19, 24, 0.2) 0%,
-      rgba(19, 19, 24, 0.2) 100%
-    ),
-    url("images/destination-img-2.jpg"), lightgray 50%;
+.item-3 {
+  grid-column: auto/span 4;
 }
-.destination-img-2:hover {
-  background: linear-gradient(
-      0deg,
-      rgba(19, 19, 24, 0.6) 0%,
-      rgba(19, 19, 24, 0.6) 100%
-    ),
-    url("images/destination-img-2.jpg"), lightgray 50%;
+.item-4 {
+  grid-column: auto/span 5;
 }
-.destination-img-3 {
-  grid-area: g-3;
-  background: linear-gradient(
-      0deg,
-      rgba(19, 19, 24, 0.2) 0%,
-      rgba(19, 19, 24, 0.2) 100%
-    ),
-    url("images/destination-img-3.jpg"), lightgray 50%;
+.item-5 {
+  grid-column: auto/span 3;
 }
-.destination-img-3:hover {
-  background: linear-gradient(
-      0deg,
-      rgba(19, 19, 24, 0.6) 0%,
-      rgba(19, 19, 24, 0.6) 100%
-    ),
-    url("images/destination-img-3.jpg"), lightgray 50%;
+.item-6 {
+  grid-column: auto/span 5;
 }
-.destination-img-4 {
-  grid-area: g-4;
-  background: linear-gradient(
-      0deg,
-      rgba(19, 19, 24, 0.2) 0%,
-      rgba(19, 19, 24, 0.2) 100%
-    ),
-    url("images/destination-img-4.jpg"), lightgray 50%;
+.item-7 {
+  grid-column: auto/span 7;
 }
-.destination-img-4:hover {
-  background: linear-gradient(
-      0deg,
-      rgba(19, 19, 24, 0.6) 0%,
-      rgba(19, 19, 24, 0.6) 100%
-    ),
-    url("images/destination-img-4.jpg"), lightgray 50%;
+.item img {
+  height: 100%;
+  width: 100%;
 }
-.destination-img-5 {
-  grid-area: g-5;
-  background: linear-gradient(
-      0deg,
-      rgba(19, 19, 24, 0.2) 0%,
-      rgba(19, 19, 24, 0.2) 100%
-    ),
-    url("images/destination-img-5.jpg"), lightgray 50%;
+.item p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
 }
-.destination-img-5:hover {
-  background: linear-gradient(
-      0deg,
-      rgba(19, 19, 24, 0.6) 0%,
-      rgba(19, 19, 24, 0.6) 100%
-    ),
-    url("images/destination-img-5.jpg"), lightgray 50%;
-}
-.destination-img-6 {
-  grid-area: g-6;
-  background: linear-gradient(
-      0deg,
-      rgba(19, 19, 24, 0.2) 0%,
-      rgba(19, 19, 24, 0.2) 100%
-    ),
-    url("images/destination-img-6.jpg"), lightgray 50%;
-}
-.destination-img-6:hover {
-  background: linear-gradient(
-      0deg,
-      rgba(19, 19, 24, 0.6) 0%,
-      rgba(19, 19, 24, 0.6) 100%
-    ),
-    url("images/destination-img-6.jpg"), lightgray 50%;
-}
-.destination-img-7 {
-  grid-area: g-7;
-  background: linear-gradient(
-      0deg,
-      rgba(19, 19, 24, 0.2) 0%,
-      rgba(19, 19, 24, 0.2) 100%
-    ),
-    url("images/destination-img-7.jpg"), lightgray 50%;
-}
-.destination-img-7:hover {
-  background: linear-gradient(
-      0deg,
-      rgba(19, 19, 24, 0.6) 0%,
-      rgba(19, 19, 24, 0.6) 100%
-    ),
-    url("images/destination-img-7.jpg"), lightgray 50%;
-}
-.destination-img-1,
-.destination-img-1:hover,
-.destination-img-2,
-.destination-img-2:hover,
-.destination-img-3,
-.destination-img-3:hover,
-.destination-img-4,
-.destination-img-4:hover,
-.destination-img-5,
-.destination-img-5:hover,
-.destination-img-6,
-.destination-img-6:hover,
-.destination-img-7,
-.destination-img-7:hover {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-#gallery span {
+.text-above {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #13131320;
   color: #fff;
-  font-size: 24px;
-  font-weight: 800;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
 }
+
 @media screen and (max-width: 768px) {
   #destination {
     margin-bottom: 2rem;
   }
-  .destination-title {
-    font-size: 20px;
-    margin-bottom: 1rem;
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
   }
-  .destination-info {
-    width: 80%;
+  .heading {
+    width: 90%;
+  }
+  .heading h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  .heading p {
     font-size: 14px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
-  .destination-gallery {
-    gap: 1rem;
-    grid-template-areas:
-      "g-1"
-      "g-2"
-      "g-3"
-      "g-4"
-      "g-5"
-      "g-6"
-      "g-7";
-  }
-  #gallery span {
-    font-size: 20px;
-    font-weight: 700;
+  .item-1,
+  .item-2,
+  .item-3,
+  .item-4,
+  .item-5,
+  .item-6,
+  .item-7 {
+    grid-column: auto/span 12;
   }
 }
 
@@ -508,19 +411,7 @@ nav li a {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 100px;
-}
-.why-title {
-  color: #131318;
-  font-size: 40px;
-  font-weight: 800;
-  margin-bottom: 24px;
-}
-.why-desc {
-  width: 50%;
-  text-align: center;
-  color: rgba(19, 19, 24, 0.7);
-  margin-bottom: 48px;
+  margin-bottom: 6rem;
 }
 .why-card-list {
   display: flex;
@@ -568,17 +459,6 @@ nav li a {
   #why {
     margin-bottom: 2rem;
   }
-  .why-title {
-    font-size: 20px;
-    margin-bottom: 1rem;
-  }
-  .why-desc {
-    width: 80%;
-    font-size: 14px;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
   .why-card-list {
     gap: 1rem;
   }
@@ -605,30 +485,41 @@ nav li a {
 /* Discount Section */
 #discount {
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 6rem;
 }
-.discount-title {
-  color: #131318;
-  font-size: 40px;
-  font-weight: 800;
-  margin-bottom: 24px;
+#discount .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
-.discount-desc {
-  width: 50%;
-  margin: 0 auto;
-  color: rgba(19, 19, 24, 0.7);
-  margin-bottom: 48px;
-}
-.discount-item {
+.discount-card {
   display: flex;
   align-items: center;
+  gap: 1rem;
   border-radius: 16px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 500px;
   padding: 50px 48px;
-  margin-bottom: 2rem;
+}
+.discount-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 60%;
+  height: max-content;
+  border-radius: 16px;
+  padding: 50px;
+  border: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+}
+.card-a-n {
+  justify-content: flex-end;
+  background-image: url("images/card-a.jpg");
 }
 .card-a {
   justify-content: flex-end;
@@ -642,19 +533,7 @@ nav li a {
   justify-content: flex-end;
   background-image: url("images/card-c.jpg");
 }
-.discount-card {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 60%;
-  height: max-content;
-  border-radius: 16px;
-  padding: 50px;
-  border: 2px solid #fff;
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(2.5px);
-}
+
 .discount-info {
   color: #5a5a5d;
   margin-bottom: 26px;
@@ -699,23 +578,13 @@ nav li a {
 }
 @media screen and (max-width: 768px) {
   #discount {
-    text-align: center;
     margin-bottom: 2rem;
   }
-  .discount-title {
-    font-size: 20px;
-    margin-bottom: 1rem;
-  }
-  .discount-desc {
-    width: 80%;
-    font-size: 14px;
-    margin-bottom: 1.5rem;
-  }
-  .discount-item {
+  .discount-card {
     align-items: flex-end;
     padding: 1rem;
   }
-  .discount-card {
+  .discount-item {
     width: 100%;
     padding: 1.5rem;
   }
@@ -752,7 +621,7 @@ nav li a {
   display: flex;
   justify-content: space-between;
   column-gap: 2rem;
-  margin-bottom: 100px;
+  margin-bottom: 6rem;
 }
 .lost-left {
   width: 50%;
@@ -836,19 +705,7 @@ nav li a {
 /* Review Section */
 #reviews {
   text-align: center;
-  margin-bottom: 100px;
-}
-.review-title {
-  color: #131318;
-  font-size: 40px;
-  font-weight: 800;
-  margin-bottom: 24px;
-}
-.review-info {
-  width: 50%;
-  margin: 0 auto;
-  color: rgba(19, 19, 24, 0.7);
-  margin-bottom: 48px;
+  margin-bottom: 6rem;
 }
 .review-card-list {
   display: flex;
@@ -862,8 +719,8 @@ nav li a {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 .review-card img {
-  width: 100px;
-  height: 100px;
+  width: 6rem;
+  height: 6rem;
   padding: 0.25rem;
   border: 5px solid #c860f9;
   border-radius: 50%;
@@ -888,18 +745,9 @@ nav li a {
   #reviews {
     margin-bottom: 2rem;
   }
-  .review-title {
-    font-size: 20px;
-    margin-bottom: 1rem;
-  }
-  .review-info {
-    width: 80%;
-    font-size: 14px;
-    margin-bottom: 1.5rem;
-  }
   .review-card-list {
     flex-direction: column;
-    grid-auto-flow: 1rem;
+    gap: 1rem;
   }
   .review-card img {
     width: 70px;
@@ -911,9 +759,7 @@ nav li a {
   .user-name {
     font-size: 18px;
   }
-  .user-location {
-    font-size: 14px;
-  }
+  .user-location,
   .user-review {
     font-size: 14px;
   }
@@ -925,7 +771,7 @@ nav li a {
   gap: 24px;
   width: 100%;
   height: max-content;
-  margin-bottom: 100px;
+  margin-bottom: 6rem;
 }
 .newsletter-left {
   display: flex;
@@ -1011,7 +857,7 @@ nav li a {
 @media screen and (max-width: 768px) {
   #newsletter {
     flex-direction: column;
-    gap: 1;
+    gap: 1rem;
     margin-bottom: 2rem;
   }
   .newsletter-left {
